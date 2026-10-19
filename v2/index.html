@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Теория на механизмите и машините — ТУ-София</title>
+<meta name="description" content="Катедра „Теория на механизмите и машините“, Факултет по индустриални технологии, Технически университет – София. Самостоятелна катедра от 1974 г., корени от 1945 г.">
+<meta name="theme-color" content="#09121f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=15">
+</head>
+<body class="is-loading">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" pathLength="1"/><circle cx="60" cy="60" r="28" pathLength="1"/><path d="M60 14v92M14 60h92" pathLength="1"/></svg>
+  <b>ТММ</b>
+</div>
+<div class="progress" id="progress"></div>
+<div class="where mono" id="where"><span id="whereN">00</span><i></i><span id="whereT">Начало</span></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Начало"><b>ТММ</b><span>Теория на механизмите<br>и машините</span></a>
+  <nav id="menu">
+    <a href="#about">Катедрата</a>
+    <a href="#atlas">Атлас</a>
+    <a href="#research">Наука</a>
+    <a href="#instrument">Лаборатория</a>
+    <a href="#education">Обучение</a>
+    <a href="#history">История</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main>
+<!-- ═════════ HERO ═════════ -->
+<section class="hero dk" id="top" data-n="00" data-t="Начало">
+  <div class="cols" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <canvas id="heroCv" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <p class="mono eb rv">Факултет по индустриални технологии · Технически университет – София</p>
+    <h1 class="hero-h" aria-label="Теория на механизмите и машините">
+      <span class="ln"><span>Теория на механизмите</span></span>
+      <span class="ln"><span>и машините</span></span>
+    </h1>
+    <div class="hero-foot">
+      <p class="lead rv">Наука за движението, която стои зад всяка машина — от часовниковия механизъм до промишления робот.</p>
+      <a href="#atlas" class="link rv"><span>Към атласа на механизмите</span><svg viewBox="0 0 24 24"><path d="M12 4v15m0 0l-6-6m6 6l6-6"/></svg></a>
+    </div>
+    <dl class="facts">
+      <div><dt class="mono">От</dt><dd>1945</dd><p>Начало на дисциплината в ТУ–София</p></div>
+      <div><dt class="mono">От</dt><dd>1974</dd><p>Самостоятелна катедра</p></div>
+      <div><dt class="mono">Преподаватели</dt><dd>15</dd><p>Научно-преподавателски състав</p></div>
+      <div><dt class="mono">Дисциплини</dt><dd>10+2</dd><p>Задължителни и избираеми</p></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ ABOUT ═════════ -->
+<section class="sec lt" id="about" data-n="01" data-t="Катедрата">
+  <div class="wrap">
+    <p class="mono kick rv"><b>§ 01</b> Катедрата</p>
+    <p class="stmt" id="stmt">Катедрата по Теория на механизмите и машините учи инженерите да виждат движението в основата на всяка машина — да го описват, изчисляват и проектират. Така от 1945 година.</p>
+    <div class="two">
+      <p class="rv">Катедрата дава на студентите знания за механичната същност на машините и развива тяхната инженерно-техническа култура и изобретателско мислене. Води 10 задължителни дисциплини, две от които в магистърски програми, и предлага две избираеми.</p>
+      <p class="rv">Преподавателите публикуват у нас и в чужбина, участват в международни проекти, работят по договори с фирми, създават патенти и изобретения. Много от разработките са внедрени в промишлеността с икономически и социален ефект.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ ATLAS ═════════ -->
+<section class="sec lt alt" id="atlas" data-n="02" data-t="Атлас">
+  <div class="wrap">
+    <div class="head">
+      <p class="mono kick rv"><b>§ 02</b> Атлас на механизмите</p>
+      <h2 class="rv">Шест класически механизма,<br>чертани в реално време</h2>
+      <p class="sub rv">Всеки чертеж е кинематично точен: положението на звената се изчислява на всеки кадър, не е записана анимация.</p>
+    </div>
+    <div class="plates">
+      <article class="plate rv" data-plate="fourbar">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. I</span><h3>Четиризвенен механизъм</h3></header>
+        <p>Манивела и люлка. Точка от свързващия лост описва сложна затворена траектория.</p>
+      </article>
+      <article class="plate rv" data-plate="slider">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. II</span><h3>Колянно-плъзгачен механизъм</h3></header>
+        <p>Превръща въртене в праволинейно движение — основата на буталните машини.</p>
+      </article>
+      <article class="plate rv" data-plate="geneva">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. III</span><h3>Малтийски механизъм</h3></header>
+        <p>Непрекъснатото въртене става прекъснато: четвърт оборот, пауза, четвърт оборот.</p>
+      </article>
+      <article class="plate rv" data-plate="cam">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. IV</span><h3>Гърбичен механизъм</h3></header>
+        <p>Профилът на гърбицата задава точния закон на движение на изпълнителното звено.</p>
+      </article>
+      <article class="plate rv" data-plate="planet">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. V</span><h3>Планетна предавка</h3></header>
+        <p>Слънчево колело, сателити и корона. При неподвижна корона u = 1 + z₃/z₁ ≈ 3,33.</p>
+      </article>
+      <article class="plate rv" data-plate="yoke">
+        <div class="pl-cv"><canvas></canvas></div>
+        <header><span class="mono">Табл. VI</span><h3>Кулисен механизъм</h3></header>
+        <p>Чисто хармонично движение от равномерно въртене на манивелата.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ RESEARCH ═════════ -->
+<section class="sec lt" id="research" data-n="03" data-t="Наука">
+  <div class="wrap">
+    <div class="head">
+      <p class="mono kick rv"><b>§ 03</b> Научноизследователска дейност</p>
+      <h2 class="rv">Изследваме движението<br>във всичките му форми</h2>
+    </div>
+    <ol class="rows">
+      <li class="row rv" tabindex="0">
+        <span class="no">I</span>
+        <div class="tx"><h3>Структура и синтез на механизми</h3><p>Проектиране на лостови, гърбични и зъбни механизми с желани кинематични и динамични свойства.</p></div>
+        <span class="mono tag">Кинематика</span>
+        <figure><img src="assets/img/planetary.jpg" alt="" loading="lazy"><figcaption class="mono">Илюстрация</figcaption></figure>
+      </li>
+      <li class="row rv" tabindex="0">
+        <span class="no">II</span>
+        <div class="tx"><h3>Роботика и мехатроника</h3><p>Манипулатори, паралелни структури и интелигентни задвижвания за съвременната автоматизация.</p></div>
+        <span class="mono tag">Роботика</span>
+        <figure><img src="assets/img/robot.jpg" alt="" loading="lazy"><figcaption class="mono">Илюстрация</figcaption></figure>
+      </li>
+      <li class="row rv" tabindex="0">
+        <span class="no">III</span>
+        <div class="tx"><h3>Динамика на машините</h3><p>Уравновесяване, вибрации и преходни режими — за по-тихи, по-леки и по-надеждни машини.</p></div>
+        <span class="mono tag">Динамика</span>
+        <figure><img src="assets/img/cam.jpg" alt="" loading="lazy"><figcaption class="mono">Илюстрация</figcaption></figure>
+      </li>
+      <li class="row rv" tabindex="0">
+        <span class="no">IV</span>
+        <div class="tx"><h3>Предавки и редуктори</h3><p>Геометрия, якост и ефективност на зъбни, планетни и циклоидни предавки.</p></div>
+        <span class="mono tag">Предавки</span>
+        <figure><img src="assets/img/cycloid.jpg" alt="" loading="lazy"><figcaption class="mono">Илюстрация</figcaption></figure>
+      </li>
+    </ol>
+    <ul class="ledger mono rv">
+      <li>Публикации у нас и в чужбина</li><li>Международни проекти</li><li>Договори с фирми</li><li>Патенти и изобретения</li><li>Внедрени разработки</li><li>Консултации за индустрията</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════ INSTRUMENT ═════════ -->
+<section class="sec dk" id="instrument" data-n="04" data-t="Лаборатория">
+  <div class="wrap">
+    <div class="head">
+      <p class="mono kick rv"><b>§ 04</b> Виртуална лаборатория</p>
+      <h2 class="rv">Задвижете механизъм<br>със собствени размери</h2>
+      <p class="sub rv">Променете дължините на звената и следете как се променя траекторията на точката от свързващия лост. Системата проверява условието на Грасхоф.</p>
+    </div>
+    <div class="lab rv">
+      <div class="lab-stage"><canvas id="labCv"></canvas><div class="readout mono" id="readout"></div></div>
+      <aside class="lab-panel">
+        <h4 class="mono">Четиризвенник</h4>
+        <label><span>Манивела a</span><output id="oa"></output><input type="range" id="ra" min="30" max="90" value="55"></label>
+        <label><span>Свързващ лост b</span><output id="ob"></output><input type="range" id="rb" min="90" max="220" value="150"></label>
+        <label><span>Люлка c</span><output id="oc"></output><input type="range" id="rc" min="70" max="200" value="120"></label>
+        <label><span>Стойка d</span><output id="od"></output><input type="range" id="rd" min="100" max="240" value="170"></label>
+        <label><span>Скорост</span><output id="os"></output><input type="range" id="rs" min="0" max="300" value="100"></label>
+        <p class="note mono" id="grashof"></p>
+        <h4 class="mono g2">Зъбна двойка</h4>
+        <canvas id="gearCv"></canvas>
+        <div class="pair">
+          <label><span>z₁</span><output id="oz1"></output><input type="range" id="z1" min="8" max="30" value="12"></label>
+          <label><span>z₂</span><output id="oz2"></output><input type="range" id="z2" min="10" max="40" value="20"></label>
+        </div>
+        <p class="note mono" id="ratio"></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ BAND ═════════ -->
+<section class="band dk" aria-label="Движение">
+  <video id="bandVideo" muted loop playsinline preload="none" poster="assets/img/hero.jpg"></video>
+  <div class="band-shade"></div>
+  <div class="wrap band-in">
+    <p class="mono kick rv">Принцип</p>
+    <p class="band-q rv">Там, където идеята<br>става движение.</p>
+  </div>
+</section>
+
+<!-- ═════════ EDUCATION ═════════ -->
+<section class="sec lt" id="education" data-n="05" data-t="Обучение">
+  <div class="wrap two-col">
+    <div class="stick">
+      <p class="mono kick rv"><b>§ 05</b> Обучение</p>
+      <h2 class="rv">От принципите<br>до проекта</h2>
+      <p class="sub rv">Десет задължителни дисциплини, две от които в магистърски програми, и две избираеми. Студентите развиват инженерно и изобретателско мислене чрез анализ, моделиране и проектиране.</p>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="mono">01</span><div><h3>Структура и кинематика</h3><p>Как се описва и измерва движението на механизмите.</p></div></li>
+      <li class="rv"><span class="mono">02</span><div><h3>Сили и динамика</h3><p>Натоварвания, уравновесяване и поведение на машините в движение.</p></div></li>
+      <li class="rv"><span class="mono">03</span><div><h3>Проектиране</h3><p>Синтез на механизми по зададени траектории и закони на движение.</p></div></li>
+      <li class="rv"><span class="mono">04</span><div><h3>Приложение</h3><p>Роботика, автоматизация и машиностроене — от модела до практиката.</p></div></li>
+      <li class="rv"><span class="mono">05</span><div><h3>Магистърска специализация</h3><p>Две дисциплини в магистърски програми за по-дълбоко навлизане в областта.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═════════ HISTORY ═════════ -->
+<section class="sec lt alt" id="history" data-n="06" data-t="История">
+  <div class="wrap">
+    <div class="head">
+      <p class="mono kick rv"><b>§ 06</b> История</p>
+      <h2 class="rv">Осем десетилетия<br>движение напред</h2>
+    </div>
+    <ol class="tl">
+      <li class="rv"><b>1945</b><div><h3>Началото</h3><p>Поставени са корените на дисциплината в техническото образование. Първият преподавател е проф. Михаил Константинов.</p></div></li>
+      <li class="rv"><b>1974</b><div><h3>Самостоятелна катедра</h3><p>През юни катедрата се обособява като самостоятелно звено. Първи неин ръководител е проф. Михаил Константинов (1921–1991), признат за неин основател.</p></div></li>
+      <li class="rv"><b>Днес</b><div><h3>Към бъдещето</h3><p>Петнадесет преподаватели, международни проекти и тясна връзка с индустрията.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═════════ TEAM ═════════ -->
+<section class="sec lt" id="team" data-n="07" data-t="Екип">
+  <div class="wrap">
+    <div class="head">
+      <p class="mono kick rv"><b>§ 07</b> Ръководство</p>
+      <h2 class="rv">Хората<br>на катедрата</h2>
+    </div>
+    <div class="people">
+      <article class="rv">
+        <p class="mono role">Ръководител на катедрата</p>
+        <h3>проф. дтн инж.<br>Николай Николов</h3>
+        <ul class="mono"><li>Блок 4, етаж 5, каб. 4536</li><li>02 965 2770</li><li><a href="mailto:nickn@tu-sofia.bg">nickn@tu-sofia.bg</a></li></ul>
+      </article>
+      <article class="rv">
+        <p class="mono role">Заместник-ръководител</p>
+        <h3>доц. д-р<br>Яна Стоянова</h3>
+        <ul class="mono"><li>Блок 4, етаж 2, каб. 4211-А</li><li>02 965 2938</li><li><a href="mailto:yast@tu-sofia.bg">yast@tu-sofia.bg</a></li></ul>
+      </article>
+    </div>
+    <p class="note2 rv">В катедрата работят 15 преподаватели. Пълният състав е на <a href="https://tu-sofia.bg/bg/departments/theory-of-mechanisms-and-machines" target="_blank" rel="noopener">официалната страница на ТУ–София</a>.</p>
+  </div>
+</section>
+
+<!-- ═════════ CONTACT ═════════ -->
+<section class="sec dk contact" id="contact" data-n="08" data-t="Контакти">
+  <div class="wrap">
+    <p class="mono kick rv"><b>§ 08</b> Контакти</p>
+    <h2 class="big rv">Свържете се<br>с катедрата</h2>
+    <a class="mail rv" href="mailto:nickn@tu-sofia.bg">nickn@tu-sofia.bg</a>
+    <div class="cgrid">
+      <div class="rv"><h4 class="mono">Адрес</h4><p>Технически университет – София<br>Факултет по индустриални технологии<br>бул. „Св. Климент Охридски“ 8<br>1756 София, Блок 4</p></div>
+      <div class="rv"><h4 class="mono">Телефон</h4><p><a href="tel:+35929652770">02 965 2770</a><br><a href="tel:+35929652938">02 965 2938</a></p></div>
+      <div class="rv"><h4 class="mono">На друго място</h4><p><a href="https://tu-sofia.bg/bg/departments/theory-of-mechanisms-and-machines" target="_blank" rel="noopener">Страница в сайта на ТУ–София ↗</a></p></div>
+    </div>
+  </div>
+  <div class="giant" aria-hidden="true">ТММ</div>
+</section>
+</main>
+
+<footer class="foot dk"><div class="wrap"><span>© <span id="yr"></span> Катедра „Теория на механизмите и машините“ · ТУ–София</span><a href="#top" class="mono">Нагоре ↑</a></div></footer>
+
+<script src="js/main.js?v=14"></script>
+<a href="../index.html" id="tmm-cat-back" aria-label="Всички варианти">← Всички варианти</a><style>#tmm-cat-back{position:fixed;left:14px;bottom:14px;z-index:2147483000;background:rgba(18,18,18,.9);color:#fff;font:600 13px/1 system-ui,Segoe UI,Arial,sans-serif;padding:10px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.28);text-decoration:none;backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(0,0,0,.35);transition:background .2s,transform .2s}#tmm-cat-back:hover{background:#000;transform:translateY(-2px);color:#fff}@media print{#tmm-cat-back{display:none}}</style></body>
+</html>

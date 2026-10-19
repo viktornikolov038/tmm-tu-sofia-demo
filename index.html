@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Катедра ТММ — варианти на уебсайта</title>
+<meta name="description" content="Каталог с осем различни посоки за уебсайта на катедра „Теория на механизмите и машините“, Технически университет – София.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f4f1ea">
+<style>
+:root{--bg:#f4f1ea;--ink:#16140f;--mut:#615d52;--line:#d9d3c4;--card:#fffdf8;--acc:#d4440b;--blue:#16347a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1280px,calc(100% - 48px));margin:0 auto}
+header.top{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+.kick{font:600 .78rem/1 ui-monospace,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+h1{font:700 clamp(2.2rem,5vw,4rem)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.02em;max-width:14em}
+.intro{max-width:44em;margin-top:18px;color:var(--mut);font-size:1.08rem}
+.note{margin-top:22px;display:inline-block;padding:9px 14px;background:#fff5d6;border:1px solid #e8d38a;border-radius:6px;font-size:.92rem}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 8px}
+.chip{padding:8px 15px;border:1px solid var(--line);border-radius:99px;background:#fff;font:600 .86rem/1 inherit;cursor:pointer;color:var(--ink)}
+.chip:hover{border-color:var(--ink)}.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{padding:20px 0 60px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -26px rgba(22,20,15,.45);border-color:var(--ink)}
+.card[hidden]{display:none}
+.shot{position:relative;display:block;aspect-ratio:12/7;background:#222;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card:hover .shot img{transform:scale(1.04)}
+.num{position:absolute;left:14px;top:14px;background:var(--ink);color:#fff;font:700 .8rem/1 ui-monospace,Consolas,monospace;padding:8px 11px;border-radius:6px;letter-spacing:.06em}
+.body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.body h2{font:700 1.65rem/1.15 Georgia,serif;letter-spacing:-.01em}
+.body h2 small{display:block;font:600 .74rem/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.body p{color:var(--mut);font-size:.98rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font:600 .72rem/1 ui-monospace,Consolas,monospace;padding:6px 9px;border-radius:4px;background:#ece6d6;color:#4a463b}
+.fit{font-size:.92rem;border-top:1px dashed var(--line);padding-top:10px}.fit b{color:var(--ink)}
+.act{display:flex;gap:10px;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:8px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem;border:2px solid var(--ink);transition:.2s}.btn:hover{background:var(--acc);border-color:var(--acc)}
+.btn.g{background:#fff;color:var(--ink)}.btn.g:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+section.cmp{padding:10px 0 70px}
+section.cmp h2{font:700 1.9rem/1.2 Georgia,serif;margin-bottom:6px}.cmp .sub{color:var(--mut);margin-bottom:18px;max-width:46em}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{width:100%;border-collapse:collapse;min-width:760px;font-size:.95rem}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}th{font:700 .78rem/1.2 ui-monospace,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);background:#efeadb}
+tr:last-child td{border-bottom:0}td a{font-weight:700;text-decoration:none}td a:hover{color:var(--acc)}
+.dots{letter-spacing:3px;color:var(--ink);white-space:nowrap}.dots i{font-style:normal;color:#c9c2ae}
+footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--mut);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <p class="kick">Катедра „Теория на механизмите и машините“ · ТУ–София</p>
+  <h1>Варианти на уебсайта</h1>
+  <p class="intro">Осем различни посоки за сайта на катедрата, от първата чернова до институционален портал. Всяка версия е напълно работеща — отворете я, пробвайте я и ни кажете коя да доразвием или как да комбинираме най-доброто от тях.</p>
+  <p class="note"><b>Демонстрационни прототипи.</b> Не са официалната страница на катедрата — тя е на <a href="https://tu-sofia.bg/bg/departments/theory-of-mechanisms-and-machines" target="_blank" rel="noopener">tu-sofia.bg ↗</a>. Всички факти са от нея.</p>
+  <div class="bar" role="group" aria-label="Филтър"><button class="chip" data-f="all" aria-pressed="true">Всички</button><button class="chip" data-f="dark" aria-pressed="false">Тъмни</button><button class="chip" data-f="light" aria-pressed="false">Светли</button><button class="chip" data-f="media" aria-pressed="false">Със снимки/видео/3D</button><button class="chip" data-f="inter" aria-pressed="false">Силно интерактивни</button><button class="chip" data-f="formal" aria-pressed="false">Строги/официални</button></div>
+</div></header>
+
+<main><div class="wrap"><div class="grid" id="grid">
+
+<article class="card" data-t="dark media">
+  <a class="shot" href="v1/index.html" aria-label="Отвори вариант 1"><img src="thumbs/v1.webp" alt="Вариант 1 — тъмна неонова тема със зъбни колела" loading="lazy" width="960" height="560"><span class="num">01</span></a>
+  <div class="body"><h2><small>Първа чернова</small>Неон</h2>
+  <p>Тъмна футуристична тема: циан неонови акценти, частици, наклонени карти, изображения и видео, генерирани в ComfyUI. Включва интерактивна лаборатория.</p>
+  <div class="tags"><span>тъмен</span><span>анимации</span><span>изображения + видео</span><span>1 страница</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> бърз „уау“ ефект. Най-типичният „шаблонен“ вид от всички.</p>
+  <div class="act"><a class="btn" href="v1/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="dark inter">
+  <a class="shot" href="v2/index.html" aria-label="Отвори вариант 2"><img src="thumbs/v2.webp" alt="Вариант 2 — редакторски стил с чертеж на механизъм" loading="lazy" width="960" height="560"><span class="num">02</span></a>
+  <div class="body"><h2><small>Редакторски</small>Мастило и месинг</h2>
+  <p>Сериф, фини линии и месингов акцент. Централно място заема Атласът — шест кинематично точни чертежа, чертани в реално време.</p>
+  <div class="tags"><span>тъмен + хартиени секции</span><span>чертежи</span><span>интерактивен атлас</span><span>1 страница</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> академичен, спокоен тон без стокови снимки.</p>
+  <div class="act"><a class="btn" href="v2/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="dark media inter">
+  <a class="shot" href="v3/index.html" aria-label="Отвори вариант 3"><img src="thumbs/v3.webp" alt="Вариант 3 — 3D зъбни колела" loading="lazy" width="960" height="560"><span class="num">03</span></a>
+  <div class="body"><h2><small>Бъдеще</small>3D зъбни колела</h2>
+  <p>Графит и инженерно оранжево. Истинска 3D сцена от зацепени зъбни колела (three.js), голям интерактивен атлас със седем механизма, BG/EN.</p>
+  <div class="tags"><span>тъмен</span><span>three.js</span><span>интерактивен атлас</span><span>BG/EN</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> силно първо впечатление и технологичен имидж.</p>
+  <div class="act"><a class="btn" href="v3/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="dark media">
+  <a class="shot" href="v4/index.html" aria-label="Отвори вариант 4"><img src="thumbs/v4.webp" alt="Вариант 4 — кинематографичен стил с фотография на зъбни колела" loading="lazy" width="960" height="560"><span class="num">04</span></a>
+  <div class="body"><h2><small>Кино</small>Документален филм</h2>
+  <p>Пълноекранни сцени с фотография от Flux и видео от Wan; чертежи, управлявани от скрола; хоризонтален скрол за науката; BG/EN.</p>
+  <div class="tags"><span>тъмен</span><span>Flux + Wan</span><span>скрол-сцени</span><span>BG/EN</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> емоция и разказ. По-тежък (≈ 4 MB) и с по-дълъг скрол.</p>
+  <div class="act"><a class="btn" href="v4/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="light inter media">
+  <a class="shot" href="v5/index.html" aria-label="Отвори вариант 5"><img src="thumbs/v5.webp" alt="Вариант 5 — светъл сайт с механизъм, който се влачи" loading="lazy" width="960" height="560"><span class="num">05</span></a>
+  <div class="body"><h2><small>Воден от проучвания</small>Ясно и любопитно</h2>
+  <p>Отговорите първо, механизъм за влачене в първия екран, „Механизмите около теб“, мисии с напредък, търсене и лесен контакт. Бърз и достъпен.</p>
+  <div class="tags"><span>светъл</span><span>мисии</span><span>търсене Ctrl+K</span><span>BG/EN</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> кандидат-студенти и родители; най-широка аудитория.</p>
+  <div class="act"><a class="btn" href="v5/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="dark inter">
+  <a class="shot" href="v6/index.html" aria-label="Отвори вариант 6"><img src="thumbs/v6.webp" alt="Вариант 6 — сайтът като машина с ръчка и малтийски механизъм" loading="lazy" width="960" height="560"><span class="num">06</span></a>
+  <div class="body"><h2><small>Щур</small>Машината</h2>
+  <p>Сайтът е машина: завърти ръчката, малтийският механизъм завърта 3D барабан със страниците. Одометри, звук (по избор) и обикновен режим.</p>
+  <div class="tags"><span>тъмен</span><span>ръчка + малтийски механизъм</span><span>звук</span><span>обикновен режим</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> запомнящо се изживяване. Изисква екран ≥ 1000×620 (иначе е в обикновен режим).</p>
+  <div class="act"><a class="btn" href="v6/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="light formal inter">
+  <a class="shot" href="v7/index.html" aria-label="Отвори вариант 7"><img src="thumbs/v7.webp" alt="Вариант 7 — техническа документация с рамка и основен надпис" loading="lazy" width="960" height="560"><span class="num">07</span></a>
+  <div class="body"><h2><small>Строга техническа</small>Документация 80–90-те</h2>
+  <p>Листове с рамка и основен надпис, текст на пишеща машина, табла, печати, чертежи на милиметрова хартия, кехлибарен терминал, бланка и печат.</p>
+  <div class="tags"><span>хартия</span><span>терминал</span><span>печат (print)</span><span>BG/EN</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> ярка идентичност с носталгичен инженерен дух.</p>
+  <div class="act"><a class="btn" href="v7/index.html">Отвори →</a></div></div>
+</article>
+
+<article class="card" data-t="light formal">
+  <a class="shot" href="v8/index.html" aria-label="Отвори вариант 8"><img src="thumbs/v8.webp" alt="Вариант 8 — официален институционален портал" loading="lazy" width="960" height="560"><span class="num">08</span></a>
+  <div class="body"><h2><small>Официален</small>Институционален портал</h2>
+  <p>Единайсет страници: инструменти за достъпност, меню с падащи панели, навигационна пътека, формални таблици, търсене, интерактивни материали.</p>
+  <div class="tags"><span>светъл</span><span>многостраничен</span><span>достъпност</span><span>BG/EN</span></div>
+  <p class="fit"><b>Най-подходящ за:</b> реалното публикуване; най-близо до стандартите за институционален сайт.</p>
+  <div class="act"><a class="btn" href="v8/index.html">Отвори →</a></div></div>
+</article>
+
+</div></div></main>
+
+<section class="cmp"><div class="wrap">
+  <h2>Накратко: сравнение</h2>
+  <p class="sub">Лична оценка на автора по пет критерия (● = по-добре). Не е измерване.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Вариант</th><th>Стил</th><th>Интерактивност</th><th>Снимки/видео/3D</th><th>Лекота (скорост)</th><th>Достъпност</th></tr></thead>
+    <tbody>
+      <tr><td><a href="v1/index.html">01 Неон</a></td><td class="dots">●●<i>●●●</i></td><td class="dots">●●<i>●●●</i></td><td class="dots">●●●<i>●●</i></td><td class="dots">●●●<i>●●</i></td><td class="dots">●●●<i>●●</i></td></tr>
+      <tr><td><a href="v2/index.html">02 Мастило и месинг</a></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●<i>●●</i></td><td class="dots">●●<i>●●●</i></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●●<i>●</i></td></tr>
+      <tr><td><a href="v3/index.html">03 3D зъбни колела</a></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●●●</td><td class="dots">●●●<i>●●</i></td><td class="dots">●●<i>●●●</i></td><td class="dots">●●●<i>●●</i></td></tr>
+      <tr><td><a href="v4/index.html">04 Кино</a></td><td class="dots">●●●●●</td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●●●</td><td class="dots">●●<i>●●●</i></td><td class="dots">●●<i>●●●</i></td></tr>
+      <tr><td><a href="v5/index.html">05 Ясно и любопитно</a></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●●●</td><td class="dots">●●●<i>●●</i></td><td class="dots">●●●●●</td><td class="dots">●●●●●</td></tr>
+      <tr><td><a href="v6/index.html">06 Машината</a></td><td class="dots">●●●●●</td><td class="dots">●●●●●</td><td class="dots">●<i>●●●●</i></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●<i>●●</i></td></tr>
+      <tr><td><a href="v7/index.html">07 Документация</a></td><td class="dots">●●●●●</td><td class="dots">●●●●<i>●</i></td><td class="dots">●<i>●●●●</i></td><td class="dots">●●●●●</td><td class="dots">●●●<i>●●</i></td></tr>
+      <tr><td><a href="v8/index.html">08 Портал</a></td><td class="dots">●●●●<i>●</i></td><td class="dots">●●●<i>●●</i></td><td class="dots">●<i>●●●●</i></td><td class="dots">●●●●●</td><td class="dots">●●●●●</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<footer><div class="wrap"><span>Каталог на вариантите · Катедра ТММ, ТУ–София</span><span>Всяка версия има връзка „← Всички варианти“ долу вляво.</span></div></footer>
+
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.card');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    var f=c.dataset.f;cards.forEach(function(k){k.hidden=!(f==='all'||(' '+k.dataset.t+' ').indexOf(' '+f+' ')>-1)});
+  })});
+})();
+</script>
+</body>
+</html>

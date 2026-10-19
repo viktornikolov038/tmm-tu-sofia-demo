@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-en="Theory of Mechanisms and Machines — TU-Sofia">Теория на механизмите и машините — ТУ-София</title>
+<meta name="description" content="Катедра „Теория на механизмите и машините“, Технически университет – София. Сайт-машина: завърти ръчката и малтийският механизъм сменя страницата. Има и обикновен режим.">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=76">
+</head>
+<body class="plain">
+<a class="skip" href="#chapters" data-en="Skip to content">Към съдържанието</a>
+
+<header class="bar">
+  <a href="#" class="logo" id="logo" aria-label="ТММ"><b>ТММ</b><span class="mono" data-en="Dept. of Mechanisms · TU-Sofia">Катедра по механизми · ТУ–София</span></a>
+  <div class="tools">
+    <button type="button" class="tool mono" id="sndBtn" aria-pressed="false"><i class="ic snd" aria-hidden="true"></i><span data-en="Sound">Звук</span><em data-en="off">изкл</em></button>
+    <button type="button" class="tool mono" id="modeBtn" aria-pressed="false"><i class="ic mode" aria-hidden="true"></i><span id="modeTxt" data-en="Machine mode">Машинен режим</span></button>
+    <button type="button" class="tool mono hot" id="shopBtn"><i class="ic wrench" aria-hidden="true"></i><span data-en="Workshop">Работилница</span></button>
+    <div class="lang mono" role="group" aria-label="Language"><button type="button" data-lang="bg" class="on">BG</button><button type="button" data-lang="en">EN</button></div>
+  </div>
+</header>
+<div class="hazard" aria-hidden="true"></div>
+
+<div class="stage" id="stage">
+  <canvas id="bgCv" aria-hidden="true"></canvas>
+  <div class="rig">
+    <div class="window" id="window">
+      <i class="screw a"></i><i class="screw b"></i><i class="screw c"></i><i class="screw d"></i>
+      <div class="drum-wrap">
+        <div class="drum" id="drum">
+          <div id="chapters" class="chapters">
+
+            <article class="ch" data-k="0" aria-labelledby="t0">
+              <p class="lab mono"><b>01</b> / 06 · <span data-en="The department">Катедрата</span></p>
+              <h1 id="t0" class="big" data-en="Theory of mechanisms and machines">Теория на механизмите и машините</h1>
+              <p class="lead" data-en="The science of motion behind every machine — taught at the Technical University of Sofia since 1945.">Наука за движението зад всяка машина — преподава се в Технически университет – София от 1945 година.</p>
+              <p class="cue mono" data-en="Turn the crank → the Geneva drive moves the page">Завърти ръчката → малтийският механизъм сменя страницата</p>
+            </article>
+
+            <article class="ch" data-k="1" aria-labelledby="t1">
+              <p class="lab mono"><b>02</b> / 06 · <span data-en="In numbers">В числа</span></p>
+              <h2 id="t1" class="h" data-en="A discipline with a long run">Дисциплина с дълга история</h2>
+              <div class="odos">
+                <div class="o"><span class="odo" data-v="1945" aria-label="1945"></span><span class="ol" data-en="the discipline starts at TU-Sofia">започва дисциплината в ТУ–София</span></div>
+                <div class="o"><span class="odo" data-v="1974" aria-label="1974"></span><span class="ol" data-en="an independent department">самостоятелна катедра</span></div>
+                <div class="o"><span class="odo" data-v="15" aria-label="15"></span><span class="ol" data-en="academic staff">преподаватели</span></div>
+                <div class="o"><span class="odo" data-v="10+2" aria-label="10+2"></span><span class="ol" data-en="10 compulsory + 2 elective subjects">10 задължителни + 2 избираеми дисциплини</span></div>
+              </div>
+              <p class="note" data-en="The department gives students a solid understanding of the mechanical nature of machines and develops engineering culture and inventive thinking.">Катедрата дава на студентите знания за механичната същност на машините и развива инженерна култура и изобретателско мислене.</p>
+            </article>
+
+            <article class="ch" data-k="2" aria-labelledby="t2">
+              <p class="lab mono"><b>03</b> / 06 · <span data-en="Research">Наука</span></p>
+              <h2 id="t2" class="h" data-en="What we investigate">Какво изследваме</h2>
+              <ul class="grid4">
+                <li><b data-en="Synthesis of mechanisms">Синтез на механизми</b><span data-en="Points that follow prescribed paths.">Точки, които следват зададени траектории.</span></li>
+                <li><b data-en="Robotics and mechatronics">Роботика и мехатроника</b><span data-en="Manipulators, parallel structures, smart drives.">Манипулатори, паралелни структури, интелигентни задвижвания.</span></li>
+                <li><b data-en="Dynamics and vibration">Динамика и вибрации</b><span data-en="Balancing and transient regimes.">Уравновесяване и преходни режими.</span></li>
+                <li><b data-en="Gears and reducers">Предавки и редуктори</b><span data-en="Geometry, strength, efficiency.">Геометрия, якост, ефективност.</span></li>
+              </ul>
+              <p class="chipline mono" data-en="Publications · International projects · Industry contracts · Patents · Implemented developments">Публикации · Международни проекти · Договори с фирми · Патенти · Внедрени разработки</p>
+            </article>
+
+            <article class="ch" data-k="3" aria-labelledby="t3">
+              <p class="lab mono"><b>04</b> / 06 · <span data-en="Education">Обучение</span></p>
+              <h2 id="t3" class="h" data-en="From principles to projects">От принципите до проекта</h2>
+              <ol class="steps5">
+                <li><span class="mono">01</span><b data-en="Structure and kinematics">Структура и кинематика</b></li>
+                <li><span class="mono">02</span><b data-en="Forces and dynamics">Сили и динамика</b></li>
+                <li><span class="mono">03</span><b data-en="Design and synthesis">Проектиране и синтез</b></li>
+                <li><span class="mono">04</span><b data-en="Application">Приложение</b></li>
+                <li><span class="mono">05</span><b data-en="Master’s specialisation">Магистърска специализация</b></li>
+              </ol>
+              <p class="note" data-en="Ten compulsory subjects — two in master’s programmes — and two electives.">Десет задължителни дисциплини, две от които в магистърски програми, и две избираеми.</p>
+            </article>
+
+            <article class="ch" data-k="4" aria-labelledby="t4">
+              <p class="lab mono"><b>05</b> / 06 · <span data-en="History">История</span></p>
+              <h2 id="t4" class="h" data-en="Eight decades of motion">Осем десетилетия движение</h2>
+              <div class="tl3">
+                <div><b>1945</b><p data-en="The roots of the discipline. First lecturer: Prof. Mihail Konstantinov.">Корените на дисциплината. Първи преподавател — проф. Михаил Константинов.</p></div>
+                <div><b>1974</b><p data-en="An independent department. First head and founder: Prof. Konstantinov (1921–1991).">Самостоятелна катедра. Първи ръководител и основател — проф. Константинов (1921–1991).</p></div>
+                <div><b data-en="Today">Днес</b><p data-en="Fifteen academic staff, international projects, ties with industry.">Петнадесет преподаватели, международни проекти, връзка с индустрията.</p></div>
+              </div>
+            </article>
+
+            <article class="ch" data-k="5" aria-labelledby="t5">
+              <p class="lab mono"><b>06</b> / 06 · <span data-en="Contact">Контакти</span></p>
+              <h2 id="t5" class="h" data-en="Set your idea in motion">Задвижете идеята си</h2>
+              <a class="mailbig" href="mailto:nickn@tu-sofia.bg?cc=yast@tu-sofia.bg">nickn@tu-sofia.bg <span aria-hidden="true">↗</span></a>
+              <div class="two">
+                <p><b data-en="Prof. Nikolay Nikolov, DSc, Eng.">проф. дтн инж. Николай Николов</b><br><span class="mono" data-en="Head · block 4, floor 5, room 4536">Ръководител · блок 4, етаж 5, каб. 4536</span><br><a href="tel:+35929652770">02 965 2770</a></p>
+                <p><b data-en="Assoc. Prof. Yana Stoyanova, PhD">доц. д-р Яна Стоянова</b><br><span class="mono" data-en="Deputy head · block 4, floor 2, room 4211-A">Заместник-ръководител · блок 4, етаж 2, каб. 4211-А</span><br><a href="tel:+35929652938">02 965 2938</a></p>
+              </div>
+              <p class="addr mono" data-en="Technical University of Sofia · 8 Kliment Ohridski Blvd · 1756 Sofia, Block 4 ·">Технически университет – София · бул. „Св. Климент Охридски“ 8 · 1756 София, Блок 4 · <a href="https://www.google.com/maps/search/?api=1&amp;query=Технически+университет+София+блок+4" target="_blank" rel="noopener" data-en="map ↗">карта ↗</a> · <a href="https://tu-sofia.bg/bg/departments/theory-of-mechanisms-and-machines" target="_blank" rel="noopener">tu-sofia.bg ↗</a></p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="drive" id="drive" aria-label="Механизъм за управление / Control mechanism">
+      <div class="gv"><canvas id="genevaCv" role="img" aria-label="Малтийски механизъм, свързан с барабана. Geneva drive linked to the drum."></canvas><span class="cap mono" data-en="Geneva drive · 6 slots">Малтийски механизъм · 6 прореза</span></div>
+      <div class="ck"><canvas id="crankCv" tabindex="0" role="slider" aria-label="Ръчка: завъртете, за да смените страницата. Crank: turn it to change page." aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"></canvas><span class="cap mono" id="rev">0.0 <em data-en="rev">об.</em></span></div>
+      <ol class="dots" id="dots" aria-label="Страници / Pages"></ol>
+      <p class="hint mono" data-en="Drag the crank · scroll · arrow keys">Влачи ръчката · скрол · стрелки</p>
+    </aside>
+  </div>
+</div>
+
+<div class="shop" id="shop" hidden role="dialog" aria-modal="true" aria-label="Работилница">
+  <div class="shop-in">
+    <button type="button" class="shop-x mono" id="shopX" aria-label="Close">Esc ✕</button>
+    <p class="kick mono" data-en="Workshop">Работилница</p>
+    <h2 class="h" data-en="Seven mechanisms. Take them apart.">Седем механизма. Разглоби ги.</h2>
+
+    <div class="missions" id="missions-wrap">
+      <div class="m-head"><h3 data-en="Missions">Мисии</h3><span class="mono" id="mCount">0 / 3</span><span class="mbar"><i id="mBar"></i></span><button type="button" class="link mono" id="mReset" data-en="Reset">Нулирай</button></div>
+      <div class="m-list" id="missions"></div>
+      <div class="goal" id="mGoal" hidden><b class="mono" data-en="Goal">Цел</b><p id="mGoalT"></p><span class="mono st" id="mGoalS"></span><span class="okmark" aria-live="polite" data-en="Done ✓">Готово ✓</span></div>
+      <div class="win" id="mWin" hidden><h3 data-en="All three missions done — the machine is yours.">И трите мисии са изпълнени — машината е твоя.</h3><button type="button" class="btn" id="winClose" data-en="Back to the machine">Обратно към машината</button></div>
+    </div>
+
+    <div class="viewer" id="atlasViewer">
+      <div class="at-tabs" id="atTabs" role="tablist" aria-label="Mechanisms"></div>
+      <div class="at-stage">
+        <canvas id="atCanvas" role="img" aria-label="Интерактивна диаграма на механизъм. Interactive mechanism diagram."></canvas>
+        <div class="at-bar">
+          <button type="button" class="pp" id="atPlay" aria-label="Pause / play" aria-pressed="false"><i></i><i></i></button>
+          <label class="spd mono"><span data-en="Speed">Скорост</span><input type="range" id="atSpeed" min="10" max="300" value="100"></label>
+        </div>
+      </div>
+      <aside class="at-side">
+        <p class="mono at-num"><span data-en="Plate">Табл.</span> <span id="atNum">I</span></p>
+        <h3 id="atTitle"></h3>
+        <p class="at-desc" id="atDesc"></p>
+        <div class="at-ctl" id="atControls"></div>
+        <dl class="at-info" id="atInfo"></dl>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script src="js/mech.js?v=76" defer></script>
+<script src="js/machine.js?v=76" defer></script>
+<script src="js/challenges.js?v=76" defer></script>
+<script src="js/main.js?v=76" defer></script>
+<a href="../index.html" id="tmm-cat-back" aria-label="Всички варианти">← Всички варианти</a><style>#tmm-cat-back{position:fixed;left:14px;bottom:14px;z-index:2147483000;background:rgba(18,18,18,.9);color:#fff;font:600 13px/1 system-ui,Segoe UI,Arial,sans-serif;padding:10px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.28);text-decoration:none;backdrop-filter:blur(6px);box-shadow:0 6px 20px rgba(0,0,0,.35);transition:background .2s,transform .2s}#tmm-cat-back:hover{background:#000;transform:translateY(-2px);color:#fff}@media print{#tmm-cat-back{display:none}}</style></body>
+</html>
